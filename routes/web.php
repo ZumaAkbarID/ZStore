@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\FrontEnd;
+use App\Http\Controllers\Store\StoreController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -10,7 +10,7 @@ Route::domain('zstore.localhost')->group(function () {
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
     ], function () {
         /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
-        Route::get('/', [FrontEnd::class, 'index'])->name('frontend.index');
+        Route::get('/', [StoreController::class, 'index'])->name('frontend.index');
     });
 });
 

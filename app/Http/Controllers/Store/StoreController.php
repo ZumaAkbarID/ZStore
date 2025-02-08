@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Store;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use RalphJSmit\Laravel\SEO\Support\SEOData;
 
-class FrontEnd extends Controller
+class StoreController extends Controller
 {
     function index()
     {
-        return view('frontend.index', [
+        return view('store.index', [
             'SEOData' => new SEOData(
                 title: __('title.homepage'),
                 description: __('description.homepage'),
