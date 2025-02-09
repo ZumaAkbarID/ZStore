@@ -12,6 +12,8 @@
     <!-- Core Css -->
     <link rel="stylesheet" href="{{ url('/') }}/assets/css/styles.css" />
 
+    @stack('css')
+
 </head>
 
 <body class="link-sidebar">
@@ -28,6 +30,25 @@
 
             <div class="body-wrapper">
                 <div class="container">
+
+                    <div id="splide" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img
+                                        src="https://static-src.vocagame.com/gopay/HOW-TO-GET-PROMO-WEB-BANNER-3b2c-original.webp">
+                                </li>
+                                <li class="splide__slide"><img
+                                        src="https://static-src.vocagame.com/gopay/GG-MLBB%20FREE%20WDP%20WEB%20BANNER-9ac1-original.webp">
+                                </li>
+                                <li class="splide__slide"><img
+                                        src="https://static-src.vocagame.com/gopay/GG-FF-FREE%20100%20DM-FEB%20WEB%20BANNER-962b-original.webp">
+                                </li>
+                                <li class="splide__slide"><img
+                                        src="https://static-src.vocagame.com/gopay/GG-VALORANT%20NOV%20WEB%20BANNER%20(1)-1ada-original.webp">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                     {{-- <div class="card position-relative overflow-hidden"> --}}
                     <div class="position-relative overflow-hidden">
@@ -108,6 +129,8 @@
 
     <!-- solar icons -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+    @stack('script')
 </body>
 
 </html>
